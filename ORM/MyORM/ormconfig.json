@@ -1,0 +1,27 @@
+{
+   "type": "mssql",
+   "host": "localhost",
+   "port": 1433,
+   "username": "sa",
+   "password": "1234",
+   "database": "solutiondesigns",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   },
+   "pool":{
+      "max": 10
+   }
+}
